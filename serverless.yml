@@ -1,0 +1,14 @@
+service: spirit-of-guidance
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+
+functions:
+  commands:
+      handler: handler.commands
+      events:
+        - http:
+            path: commands/{command}
+            method: post
+            cors: true
