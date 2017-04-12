@@ -8,13 +8,16 @@ const s3 = new AWS.S3()
 const archiveBucketName = 'stelligentsia-labs'
 const archiveBucketPrefix = 'archive-' + moment().format('YYYY-MM-DD')
 const safeBuckets = [
-  'ftpfrontendpipeline-ftpfrontendbucket-eblys920aisn'
+  'ftpfrontendpipeline-ftpfrontendbucket-eblys920aisn',
+  'stelligent-github-backups'
 ]
 
 s3.listBuckets((err, data) => {
   data.Buckets.map(bucket => {
-    if (bucket.Name !== archiveBucketName && safeBuckets.indexOf(bucket.Name) === -1)
-      archiveBucket(bucket.Name, deleteBucket)
+    console.log(bucket.Name)
+    return true
+    // if (bucket.Name !== archiveBucketName && safeBuckets.indexOf(bucket.Name) === -1)
+      // archiveBucket(bucket.Name, deleteBucket)
   })
 })
 

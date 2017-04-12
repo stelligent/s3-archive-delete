@@ -2,20 +2,20 @@
   "name": "s3-archive-delete",
   "version": "1.0.0",
   "description": "",
-  "main": "handler.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dmurawsky/spirit-of-guidance.git"
+    "url": "git+https://github.com/stelligent/s3-archive-delete.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dmurawsky/spirit-of-guidance/issues"
+    "url": "https://github.com/stelligent/s3-archive-delete/issues"
   },
-  "homepage": "https://github.com/dmurawsky/spirit-of-guidance#readme",
+  "homepage": "https://github.com/stelligent/s3-archive-delete#readme",
   "dependencies": {
     "async": "^2.3.0",
     "aws-sdk": "^2.41.0",
