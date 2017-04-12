@@ -13,7 +13,7 @@ const safeBuckets = [
 
 s3.listBuckets((err, data) => {
   data.Buckets.map(bucket => {
-    if (bucket.Name !== archiveBucketName && )
+    if (bucket.Name !== archiveBucketName && safeBuckets.indexOf(bucket.Name) === -1)
       archiveBucket(bucket.Name, deleteBucket)
   })
 })
