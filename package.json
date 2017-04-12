@@ -1,0 +1,24 @@
+{
+  "name": "s3-archive-delete",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmurawsky/spirit-of-guidance.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dmurawsky/spirit-of-guidance/issues"
+  },
+  "homepage": "https://github.com/dmurawsky/spirit-of-guidance#readme",
+  "dependencies": {
+    "async": "^2.3.0",
+    "aws-sdk": "^2.41.0",
+    "moment": "^2.18.1"
+  }
+}

@@ -2,7 +2,7 @@
 
 console.log('Loading func');
 module.exports.commands = (event, context, callback) => {
-
+  console.log()
   const response = {
     statusCode: 200,
     body: JSON.stringify({
