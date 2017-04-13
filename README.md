@@ -3,5 +3,6 @@
 ### Usage
 
 ```shell
+$ npm i
 $ node index.js
 ```
